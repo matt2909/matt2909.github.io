@@ -6,10 +6,21 @@
     <description>Recent content on Matt Horsnell&#39;s blog.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 24 Apr 2017 11:30:44 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 27 Jun 2017 09:27:36 +0100</lastBuildDate>
     
 	<atom:link href="https://matt2909.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Go Maps</title>
+      <link>https://matt2909.github.io/post/gomaps/</link>
+      <pubDate>Tue, 27 Jun 2017 09:27:36 +0100</pubDate>
+      
+      <guid>https://matt2909.github.io/post/gomaps/</guid>
+      <description>This is a bit of a Tuesday micro-blog looking at the performance of various solutions for concurrent map insertion/retrieval in golang.
+In particular I&amp;rsquo;m going to look at three types of Map:
+ Go&amp;rsquo;s builtin map type, protected by a read-write mutex (sync/atomic/RWMutex) Go&amp;rsquo;s new sync.Map type, which is an optimized scalable concurrent map. Go&amp;rsquo;s builtin map type, protected by an elided rw-mutex.  </description>
+    </item>
     
     <item>
       <title>Post marathon pains</title>
