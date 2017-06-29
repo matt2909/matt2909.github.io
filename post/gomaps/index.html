@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<title> Go Maps &middot; Matt Horsnell&#39;s blog. </title>
+
+
+<link rel="stylesheet" href="https://matt2909.github.io/css/slim.css">
+<link rel="stylesheet" href="https://matt2909.github.io/css/highlight.min.css">
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Source+Code+Pro' rel='stylesheet' type='text/css'>
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+<link rel="shortcut icon" href="/favicon.ico">
+
+
+<link href="" rel="alternate" type="application/rss+xml" title="Matt Horsnell&#39;s blog." />
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+  <h1 class="site-title"><a href="https://matt2909.github.io/">Matt Horsnell&#39;s blog.</a></h1>
+  <p class="site-tagline">just a place to write stuff down.</p>
+  <div class="nav">
+    <a class="nav-btn" href="#">
+      <span class="ci ci-burger"></span>
+    </a>
+    <ul class="nav-list">
+       
+	  <li class="spacer">&ac;</li>
+
+      <li><a href="https://github.com/matt2909">Github</a></li> 
+      <li><a href="https://twitter.com/@maver">Twitter</a></li> 
+    </ul>
+  </div>
+</div>
+    <div class="content">
+      <div class="posts">
+        <div class="post">
+          <h2 class="post-title"><a href="https://matt2909.github.io/post/gomaps/">Go Maps</a></h2>
+          <span class="post-date">Jun 27, 2017 </span>
+          <div class="post-content">
+            <p>This is a bit of a Tuesday micro-blog looking at the performance of various solutions for concurrent map insertion/retrieval in golang.</p>
+
+<p>In particular I&rsquo;m going to look at three types of Map:</p>
+
+<ol>
+<li>Go&rsquo;s builtin map type, protected by a read-write mutex (sync/atomic/RWMutex)</li>
+<li>Go&rsquo;s new sync.Map type, which is an optimized scalable concurrent map.</li>
+<li>Go&rsquo;s builtin map type, protected by an elided rw-mutex.</li>
+</ol>
+
+          </div>
+        </div>
+        <div class="pagination"> 
+          <a class="btn next " href="https://matt2909.github.io/post/post-marathon-pains/"> Next</a> 
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer">
+  
+  <p>Powered by <a href="http://gohugo.io">Hugo</a>. This theme—Slim—is open sourced on <a href="https://github.com/zhe/hugo-theme-slim">Github</a>.</p>
+  
+</div>
+
+  </div>
+  <script src="https://matt2909.github.io/js/slim.js"></script>
+  <script src="https://matt2909.github.io/js/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+  
+</body>
+
+</html>
